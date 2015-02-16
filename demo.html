@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gFloor Demo</title>
+    <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./gfloor.js"></script>
+    <style type="text/css">
+      .wrap{width:960px;margin:0 auto;padding:50px 0 800px;color:#000}
+      h1{height:300px;font-size:60px;text-align:center}
+      h1 span{font-size:14px;font-weight:normal;color:#999}
+      .gfloor-nav{display:none;position:fixed;top:200px;right:20px;width:80px;padding:10px;background:#eee;border:1px solid #ddd;border-radius:5px}
+      .gfloor-nav li{list-style:none;height:26px;line-height:26px;text-align:center;cursor:pointer;border-radius:5px}
+      .gfloor-nav li:hover{background:#ddd}
+      .gfloor-nav li.cur{background:#f5f5f5;color:#f40}
+      .gfloor-1{height:300px;background:#ddd}
+      .gfloor-2{height:400px;background:#dee}
+      .gfloor-3{height:500px;background:#cee}
+      .gfloor-4{height:600px;background:#bee}
+      .gfloor-5{height:700px;background:#aec}
+      .gfloor-1,.gfloor-2,.gfloor-3,.gfloor-4,.gfloor-5{margin-bottom:20px;padding-top:200px;font-size:60px;text-align:center;border-radius:10px;text-shadow:1px 1px 0 #fff}
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        gFloor(".gfloor-",".gfloor-li-",5,1,".gfloor-nav");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>gFloor.js <span>by Goney W.</span></h1>
+      <div class="gfloor-1">一楼</div>
+      <div class="gfloor-2">二楼</div>
+      <div class="gfloor-3">三楼</div>
+      <div class="gfloor-4">四楼</div>
+      <div class="gfloor-5">五楼</div>
+      <ul class="gfloor-nav">
+        <li class="gfloor-li-1">1F</li>
+        <li class="gfloor-li-2">2F</li>
+        <li class="gfloor-li-3">3F</li>
+        <li class="gfloor-li-4">4F</li>
+        <li class="gfloor-li-5">5F</li>
+      </ul>
+    </div>
+  </body>
+</html>
